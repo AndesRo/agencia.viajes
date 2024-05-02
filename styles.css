@@ -1,15 +1,73 @@
 /* Estilos generales */
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('img/002.jpg'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center; /* Centra la imagen de fondo */
-    color: #333; /* Color de texto principal */
-    font-size: 24px; /* Tamaño de letra base */
+    background-image: url('img/004.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubrir toda la pantalla con la imagen */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-repeat: no-repeat; /* Evitar que la imagen de fondo se repita */
+    background-attachment: fixed; /* Fijar la imagen de fondo para que no se desplace con el contenido */
+    font-family: Arial, sans-serif; /* Tipo de fuente para el texto en la página */
+    color: #333; /* Color del texto */
+    /* Ajusta la opacidad de la imagen de fondo */
+    /* Puedes ajustar el valor entre 0 y 1, donde 0 es completamente transparente y 1 es completamente opaco */
+    /* Por ejemplo, 0.8 sería un 80% de opacidad */
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con opacidad */
 }
+
+
+#audio-button {
+    width: 80px; /* Ancho del botón */
+    height: 80px; /* Altura del botón */
+    border-radius: 50%; /* Hacer el botón redondo */
+    background-color: #004445; /* Color de fondo del botón */
+    color: #fff; /* Color del icono del botón */
+    border: none; /* Eliminar borde */
+    cursor: pointer; /* Cambiar cursor a pointer */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#audio-button:hover {
+    background-color: #87d8c3; /* Color de fondo del botón al pasar el cursor */
+}
+
+#audio-button:focus {
+    outline: none; /* Eliminar el contorno al hacer clic */
+}
+
+#audio-button.playing {
+    background-color: #ff7f50; /* Color de fondo del botón cuando está reproduciendo */
+}
+
+
+
+#audio-button:hover {
+    background-color: #87d8c3; /* Color de fondo del botón al pasar el cursor */
+}
+
+#audio-button:focus {
+    outline: none; /* Eliminar el contorno al hacer clic */
+}
+
+#audio-button.playing {
+    background-color: #ff7f50; /* Color de fondo del botón cuando está reproduciendo */
+}
+#quienes-somos .contenedor-imagenes img {
+    width: 100%; /* Ajustar la imagen al ancho del contenedor */
+    max-width: 1000px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Hacer que la imagen sea un bloque para aplicar estilos */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+p {
+    font-size: 18px; /* Tamaño de fuente más grande */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: lightslategray; /* Color de texto más oscuro */
+    margin-bottom: 20px; /* Espaciado inferior entre párrafos */
+}
+
+
 
 /* Superposición difuminada */
 .overlay {
@@ -23,9 +81,9 @@ body {
 }
 
 header {
-    background-color: green; /* Verde oscuro */
+    background-color: green ; /* Verde oscuro */
     color: #fff;
-    padding: 20px;
+    padding: 22px;
     text-align: center;
 }
 
@@ -48,7 +106,7 @@ section {
 h2 {
     margin-bottom: 20px;
     color: green; /* Verde oscuro para los títulos */
-    font-size: 20px; /* Tamaño de letra para los títulos */
+    font-size: 22px; /* Tamaño de letra para los títulos */
 }
 
 .contenedor-imagenes {
@@ -65,7 +123,7 @@ h2 {
 
 .actividad h3 {
     color: green; /* Verde oscuro para los títulos de las actividades */
-    font-size: 20px; /* Tamaño de letra para los títulos de las actividades */
+    font-size: 22px; /* Tamaño de letra para los títulos de las actividades */
 }
 
 .actividad p {
@@ -92,22 +150,30 @@ strong {
     max-width: 100%;
     height: auto;
     border-radius: 5px; /* Bordes redondeados para las imágenes */
-    border: 3px solid #87d8c3; /* Agregar borde a las imágenes */
+    border: 3px solid green; /* Agregar borde a las imágenes */
 }
 
 /* Estilos para los videos */
-.video-container iframe {
+.video-container {
     margin: 10px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px; /* Bordes redondeados para los videos */
+    width: 100%; /* Ancho completo */
+    max-width: 560px; /* Ancho máximo para evitar que los videos sean demasiado anchos */
+    overflow: hidden; /* Oculta el desbordamiento de los videos */
+}
+
+.video-container iframe {
+    width: 100%; /* Ancho completo del iframe */
+    height: 315px; /* Altura fija para mantener la relación de aspecto 16:9 */
+    border: none; /* Elimina cualquier borde que pueda tener el iframe */
+    border-radius: 10px; /* Bordes redondeados para los videos */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de los videos */
     transition: transform 0.3s ease; /* Transición suave al pasar el cursor sobre los videos */
 }
 
-.video-container iframe:hover {
+.video-container:hover iframe {
     transform: scale(1.05); /* Aumentar ligeramente el tamaño del video al pasar el cursor */
 }
+
 
 
 #formularios-ocultos,
@@ -121,7 +187,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    font-size: 18px; /* Tamaño de letra para el pie de página */
+    font-size: 16px; /* Tamaño de letra para el pie de página */
 }
 
 footer p {

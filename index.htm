@@ -25,32 +25,32 @@
         </nav>
     </header>
 
-        <h2>ESCUCHA NUESTRO PODCAST</h2>
-        <audio controls>
-            <source src="audio/audio.mp3" type="audio/mpeg">
-            Tu navegador no soporta la etiqueta de audio.
-        </audio>
+    <section id="podcast">
+        <h2>Escucha Nuestro Podcast</h2>
+        <button id="audio-button" class="playing" onclick="toggleAudio()">Play</button>
+        <audio id="audio" src="audio/audio.mp3"></audio>
     </section>
+    
 
     <section id="quienes-somos">
         <h2>QUIENES SOMOS</h2>
-        <p>Una organización dedicada a la conservación del medio ambiente y la sensibilización sobre los efectos del cambio climático. Trabajamos para promover un futuro sostenible para las presentes generaciones y futuras. Nuestro equipo está formado por profesionales comprometidos con la protección del medio ambiente y voluntarios entusiastas que contribuyen a nuestras iniciativas.</p>
+        <p>Una organización dedicada a la conservación del medio ambiente y la sensibilización sobre los efectos del cambio climático<br>Trabajamos para promover un futuro sostenible para las presentes generaciones y futuras<br> Nuestro equipo está formado por profesionales comprometidos con la protección del medio ambiente y voluntarios entusiastas que contribuyen a nuestras iniciativas.</p>
         <div class="contenedor-imagenes">
             <img src="img/voluntarios.jpg" alt="Voluntarios de la empresa" class="event-img">
         </div>
     </section>
 
     <section id="actividades-realizadas">
-        <h2>ACTIVIDADES REALIZADAS</h2>
+        <h2>Actividades Realizadas</h2>
         <div class="actividad">
             <h3>Recogida de Basura en Playa Amarilla</h3>
             <p>Un evento comunitario donde limpiamos la playa de residuos plásticos y otros desechos.</p>
-            <img src="img/playa.jpg" alt="Actividad: Recogida de Basura en Playa Limón" class="event-img" width="660" height="440">
+            <img src="img/005-playa amarilla.jpg" alt="Actividad: Recogida de Basura en Playa Limón" class="event-img" width="660" height="440">
         </div>
         <div class="actividad">
             <h3>Charla sobre Energías Renovables</h3>
             <p>Una sesión sobre la experiencia del potencial de las energías renovables para combatir el cambio climático.</p>
-            <img src="img/charla.jpg" alt="Actividad: Charla sobre Energías Renovables" class="event-img" width="660" height="440">
+            <img src="img/006-charlas.jpg" alt="Actividad: Charla sobre Energías Renovables" class="event-img" width="660" height="440">
         </div>
         <div class="actividad">
             <h3>Taller de Huertos Urbanos</h3>
@@ -60,7 +60,7 @@
     </section>
 
     <section id="proximos-eventos">
-        <h2>PROXIMOS EVENTOS</h2>
+        <h2>Proximos Eventos</h2>
         <div class="evento">
             <h3>Evento: Día del Árbol</h3>
             <div>
@@ -104,7 +104,7 @@
     </section>
 
     <section id="videos-relacionados">
-        <h2>VIDEOS RELACIONADOS</h2>
+        <h2>Videos Realacionados</h2>
         <div class="video-container">
             <iframe width="560" height="315" src="video/cambio climatico 2.mp4" frameborder="0" allowfullscreen></iframe>
             <iframe width="560" height="315" src="video/cambio climatico 3.mp4" frameborder="0" allowfullscreen></iframe>
@@ -115,7 +115,7 @@
 
     <section id="formularios-ocultos">
         <div style="text-align: center;">
-            <h2>ACCESO</h2>
+            <h2>Inicio de Sesion</h2>
             <form class="formulario" action="#" method="post">
                 <label for="usuario">Usuario:</label>
                 <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
@@ -190,6 +190,21 @@
             }
         });
     </script>
+<script>
+    // Función para reproducir o pausar el audio
+    function toggleAudio() {
+        var audio = document.getElementById('audio');
+        var audioButton = document.getElementById('audio-button');
+        
+        if (audio.paused) {
+            audio.play();
+            audioButton.classList.add('playing'); // Agrega la clase 'playing' al botón cuando se está reproduciendo
+        } else {
+            audio.pause();
+            audioButton.classList.remove('playing'); // Elimina la clase 'playing' del botón cuando se pausa la reproducción
+        }
+    }
+</script>
 
 </body>
 
