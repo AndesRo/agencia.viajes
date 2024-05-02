@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organización para la Conservación del Medio Ambiente</title>
+    <link rel="icon" href="img/tree.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo-container">
+            <img src="img/logo.gif" alt="Logo de la Organización">
+        </div>
+        <h1>Organización para la Conservación del Medio Ambiente</h1>
+        <nav>
+            <a href="#quienes-somos">Quiénes Somos</a>
+            <a href="#actividades-realizadas">Actividades Realizadas</a>
+            <a href="#proximos-eventos">Próximos Eventos</a>
+            <a href="#videos-relacionados">Videos Relacionados</a>
+            <a href="https://es.wikipedia.org/wiki/Medio_ambiente" target="_blank">Wikipedia</a>
+        </nav>
+    </header>
+
+        <h2>ESCUCHA NUESTRO PODCAST</h2>
+        <audio controls>
+            <source src="audio/audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+    </section>
+
+    <section id="quienes-somos">
+        <h2>QUIENES SOMOS</h2>
+        <p>Una organización dedicada a la conservación del medio ambiente y la sensibilización sobre los efectos del cambio climático. Trabajamos para promover un futuro sostenible para las presentes generaciones y futuras. Nuestro equipo está formado por profesionales comprometidos con la protección del medio ambiente y voluntarios entusiastas que contribuyen a nuestras iniciativas.</p>
+        <div class="contenedor-imagenes">
+            <img src="img/voluntarios.jpg" alt="Voluntarios de la empresa" class="event-img">
+        </div>
+    </section>
+
+    <section id="actividades-realizadas">
+        <h2>ACTIVIDADES REALIZADAS</h2>
+        <div class="actividad">
+            <h3>Recogida de Basura en Playa Amarilla</h3>
+            <p>Un evento comunitario donde limpiamos la playa de residuos plásticos y otros desechos.</p>
+            <img src="img/playa.jpg" alt="Actividad: Recogida de Basura en Playa Limón" class="event-img" width="660" height="440">
+        </div>
+        <div class="actividad">
+            <h3>Charla sobre Energías Renovables</h3>
+            <p>Una sesión sobre la experiencia del potencial de las energías renovables para combatir el cambio climático.</p>
+            <img src="img/charla.jpg" alt="Actividad: Charla sobre Energías Renovables" class="event-img" width="660" height="440">
+        </div>
+        <div class="actividad">
+            <h3>Taller de Huertos Urbanos</h3>
+            <p>Un taller práctico en que enseñamos a la comunidad a cultivar sus propios alimentos en entornos urbanos.</p>
+            <img src="img/huerto.jpg" alt="Actividad: Taller de Huertos Urbanos" class="event-img" width="660" height="440">
+        </div>
+    </section>
+
+    <section id="proximos-eventos">
+        <h2>PROXIMOS EVENTOS</h2>
+        <div class="evento">
+            <h3>Evento: Día del Árbol</h3>
+            <div>
+                <span>Lugar:</span>
+                <span>Parque Central</span>
+            </div>
+            <div>
+                <span>Fecha y Hora:</span>
+                <span>15 de abril de 2024, 10:00 - 14:00</span>
+            </div>
+        </div>
+        <div class="evento">
+            <h3>Evento: Conferencia sobre Conservación Marina</h3>
+            <div>
+                <span>Lugar:</span>
+                <span>Centro Cultural Municipal</span>
+            </div>
+            <div>
+                <span>Fecha y Hora:</span>
+                <span>22 de abril de 2024, 18:00 - 20:00</span>
+            </div>
+        </div>
+        <div class="evento">
+            <h3>Evento: Excursión Ecológica al Bosque Nacional</h3>
+            <div>
+                <span>Lugar:</span>
+                <span>Bosque Nacional</span>
+            </div>
+            <div>
+                <span>Fecha y Hora:</span>
+                <span>30 de abril de 2024, 08:00 - 17:00</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="Temas de interes">
+        <div style="text-align: center;">
+            <strong>Para obtener más información sobre nuestros eventos, noticias y mucho más pulse <a href="https://www.cambio-climatico.com/">Aquí</a>.</strong>
+
+        </div>
+    </section>
+
+    <section id="videos-relacionados">
+        <h2>VIDEOS RELACIONADOS</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="video/cambio climatico 2.mp4" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="video/cambio climatico 3.mp4" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="video/cambio climatico 4.mp4" frameborder="0" allowfullscreen></iframe>
+            <!-- Agrega más iframes de vídeos aquí -->
+        </div>
+    </section>
+
+    <section id="formularios-ocultos">
+        <div style="text-align: center;">
+            <h2>ACCESO</h2>
+            <form class="formulario" action="#" method="post">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña" required>
+
+                <input type="submit" value="Iniciar sesión">
+            </form>
+        </div>
+
+        <div id="formularios-container" style="display: none;">
+            <section id="formulario-registro">
+                <h2>Formulario nuevos usuarios</h2>
+                <form class="formulario" action="registro.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+
+                    <label for="tipo_documento">Tipo de Documento:</label>
+                    <select id="tipo_documento" name="tipo_documento" required>
+                        <option value="DNI">DNI</option>
+                        <option value="RUT">RUT</option>
+                        <option value="Cédula">Cédula</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+
+                    <label for="numero_documento">Número de Documento:</label>
+                    <input type="text" id="numero_documento" name="numero_documento" placeholder="Ingrese su número de documento" required>
+
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+                    <label>Sexo:</label>
+                    <input type="radio" id="sexo_masculino" name="sexo" value="masculino" required>
+                    <label for="sexo_masculino">Masculino</label>
+                    <input type="radio" id="sexo_femenino" name="sexo" value="femenino">
+                    <label for="sexo_femenino">Femenino</label>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+
+                    <label for="telefono">Teléfono Móvil:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required>
+
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Ingrese cualquier comentario"></textarea>
+
+                    <input type="submit" value="Registrarse">
+                </form>
+            </section>
+        </div>
+        <div style="text-align: center;">
+            <p>Si quieres formar parte de nuestra comunidad conservacionista, <a href="#" id="mostrar-formulario-registro">pincha aquí</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Organización para la Conservación del Medio Ambiente. Todos los derechos reservados.<br><i>Creado por Andres Romero/ programación web 1</i>🌍<br></p>
+    </footer>
+
+    <!-- JavaScript para mostrar/ocultar el formulario de registro -->
+    <script>
+        document.getElementById('mostrar-formulario-registro').addEventListener('click', function() {
+            var formulariosContainer = document.getElementById('formularios-container');
+            if (formulariosContainer.style.display === 'none') {
+                formulariosContainer.style.display = 'block';
+            } else {
+                formulariosContainer.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/002.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #333; /* Color de texto principal */
+    font-size: 24px; /* Tamaño de letra base */
+}
+
+/* Superposición difuminada */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Color semitransparente (blanco) */
+    z-index: -1; /* Asegura que la superposición esté detrás de todo el contenido */
+}
+
+header {
+    background-color: green; /* Verde oscuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Transición suave para el color del enlace */
+    font-size: 18px; /* Tamaño de letra para los enlaces */
+}
+
+nav a:hover {
+    color: #87d8c3; /* Color de enlace al pasar el cursor */
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: green; /* Verde oscuro para los títulos */
+    font-size: 20px; /* Tamaño de letra para los títulos */
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.event-img {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+.actividad h3 {
+    color: green; /* Verde oscuro para los títulos de las actividades */
+    font-size: 20px; /* Tamaño de letra para los títulos de las actividades */
+}
+
+.actividad p {
+    margin-bottom: 20px;
+    font-size: 20px; /* Tamaño de letra para los párrafos de las actividades */
+}
+
+.evento {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.evento div {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+    color: #004445; /* Color verde oscuro para resaltar */
+}
+
+.event-img {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    border: 3px solid #87d8c3; /* Agregar borde a las imágenes */
+}
+
+/* Estilos para los videos */
+.video-container iframe {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados para los videos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de los videos */
+    transition: transform 0.3s ease; /* Transición suave al pasar el cursor sobre los videos */
+}
+
+.video-container iframe:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño del video al pasar el cursor */
+}
+
+
+#formularios-ocultos,
+#videos-relacionados,
+#Temas {
+    background-color: #fff; /* Fondo blanco para estas secciones */
+}
+
+footer {
+    background-color: green; /* Verde oscuro para el pie de página */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px; /* Tamaño de letra para el pie de página */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Ajustes para formularios */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario input[type="password"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px; /* Ajusta el relleno de la casilla */
+    font-size: 16px; /* Tamaño de letra para los campos de formulario */
+    border: 1px solid #ccc; /* Borde de las casillas del formulario */
+    border-radius: 5px; /* Bordes redondeados para las casillas del formulario */
+    margin-bottom: 10px; /* Espacio entre las casillas del formulario */
+    box-sizing: border-box; /* Ajusta el tamaño total de la casilla, incluido el relleno y el borde */
+}
+
+.formulario select {
+    height: 40px; /* Altura de las casillas desplegables */
+}
+
+.formulario textarea {
+    height: 120px; /* Altura del área de texto */
+}
+
+.formulario input[type="submit"] {
+    background-color: green; /* Color de fondo del botón de envío */
+    color: #fff; /* Color de texto del botón de envío */
+    padding: 12px 20px; /* Ajusta el relleno del botón de envío */
+    border: none; /* Borde del botón de envío */
+    border-radius: 5px; /* Bordes redondeados para el botón de envío */
+    font-size: 16px; /* Tamaño de letra para el botón de envío */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón de envío */
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #87d8c3; /* Color de fondo del botón de envío al pasar el cursor */
+}
+
+/* Estilos específicos para dispositivos móviles */
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+    section {
+        padding: 20px;
+    }
+    .contenedor-imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .event-img {
+        width: 100%;
+    }
+}
