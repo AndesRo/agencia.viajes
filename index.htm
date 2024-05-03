@@ -25,13 +25,26 @@
         </nav>
     </header>
 
-    <section id="podcast">
-        <h2>Escucha Nuestro Podcast</h2>
-        <button id="audio-button" class="playing" onclick="toggleAudio()">Play</button>
-        <audio id="audio" src="audio/audio.mp3"></audio>
-    </section>
-    
+    <h2>Streaming Radio Ecológica</h2>
+    <audio id="audio" src="https://sonic-us.streaming-chile.com:7048/stream?type=http&amp;nocache=141" preload="auto"></audio>
+<button id="audio-button" onclick="toggleAudio()">Play</button>
 
+<script>
+    function toggleAudio() {
+        var audio = document.getElementById('audio');
+        var audioButton = document.getElementById('audio-button');
+        
+        if (audio.paused) {
+            audio.play();
+            audioButton.textContent = 'Pause';
+        } else {
+            audio.pause();
+            audioButton.textContent = 'Play';
+        }
+    }
+</script>
+
+    
     <section id="quienes-somos">
         <h2>QUIENES SOMOS</h2>
         <p>Una organización dedicada a la conservación del medio ambiente y la sensibilización sobre los efectos del cambio climático<br>Trabajamos para promover un futuro sostenible para las presentes generaciones y futuras<br> Nuestro equipo está formado por profesionales comprometidos con la protección del medio ambiente y voluntarios entusiastas que contribuyen a nuestras iniciativas.</p>

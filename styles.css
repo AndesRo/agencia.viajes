@@ -63,10 +63,27 @@ body {
 p {
     font-size: 18px; /* Tamaño de fuente más grande */
     line-height: 1.6; /* Espaciado entre líneas */
-    color: lightslategray; /* Color de texto más oscuro */
+    color: black; /* Color de texto más oscuro */
     margin-bottom: 20px; /* Espaciado inferior entre párrafos */
 }
 
+/* Estilos para el botón de reproducción/pausa */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    -webkit-appearance: none; /* Prefijo de vendedor para WebKit */
+    -moz-appearance: none; /* Prefijo de vendedor para Gecko (Firefox) */
+    appearance: none; /* Propiedad estándar */
+}
+
+/* Estilos para el icono SVG */
+svg {
+    fill: #4CAF50;
+    width: 48px;
+    height: 48px;
+}
 
 
 /* Superposición difuminada */
@@ -204,7 +221,7 @@ footer p {
     width: 100%;
     padding: 10px; /* Ajusta el relleno de la casilla */
     font-size: 16px; /* Tamaño de letra para los campos de formulario */
-    border: 1px solid #ccc; /* Borde de las casillas del formulario */
+    border: 1px solid black; /* Borde de las casillas del formulario */
     border-radius: 5px; /* Bordes redondeados para las casillas del formulario */
     margin-bottom: 10px; /* Espacio entre las casillas del formulario */
     box-sizing: border-box; /* Ajusta el tamaño total de la casilla, incluido el relleno y el borde */
