@@ -12,6 +12,19 @@ body {
     /* Por ejemplo, 0.8 sería un 80% de opacidad */
     background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con opacidad */
 }
+#logo-container img {
+    width: 100px; /* Tamaño deseado */
+    height: auto; /* Esto asegura que la proporción original de la imagen se mantenga */
+}
+.social-icons i {
+    font-size: 24px;
+}
+nav a {
+    color: #FF5733; /* Cambiar el color del texto */
+    font-size: 18px; /* Cambiar el tamaño de la fuente */
+    text-decoration: none; /* Eliminar el subrayado */
+    font-weight: bold; /* Hacer el texto en negrita */
+}
 
 
 /* Superposición difuminada */
@@ -59,12 +72,6 @@ h2 {
     justify-content: center;
 }
 
-.event-img {
-    margin: 10px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px; /* Bordes redondeados para las imágenes */
-}
 
 .actividad h3 {
     color: green; /* Verde oscuro para los títulos de las actividades */
@@ -95,7 +102,7 @@ strong {
     max-width: 100%;
     height: auto;
     border-radius: 5px; /* Bordes redondeados para las imágenes */
-    border: 3px solid green; /* Agregar borde a las imágenes */
+    border: 3px solid white; /* Agregar borde a las imágenes */
 }
 
 /* Estilos para los videos */
@@ -130,9 +137,9 @@ strong {
 footer {
     background-color: green; /* Verde oscuro para el pie de página */
     color: #fff;
-    padding: 20px;
+    padding: 18px;
     text-align: center;
-    font-size: 16px; /* Tamaño de letra para el pie de página */
+    font-size: 15px; /* Tamaño de letra para el pie de página */
 }
 
 footer p {
@@ -177,20 +184,10 @@ footer p {
     background-color: #87d8c3; /* Color de fondo del botón de envío al pasar el cursor */
 }
 
-/* Estilos específicos para dispositivos móviles */
+/* Estilos generales que se aplican independientemente del tamaño de la pantalla */
 
+/* Estilos específicos para pantallas de hasta 600px de ancho (teléfonos móviles) */
 @media only screen and (max-width: 600px) {
-    header {
-        padding: 10px;
-    }
-    section {
-        padding: 20px;
-    }
-    .contenedor-imagenes {
-        flex-direction: column;
-        align-items: center;
-    }
-    .event-img {
-        width: 100%;
-    }
+    /* Aquí puedes colocar estilos específicos para pantallas pequeñas */
+    /* Por ejemplo, ajustar el diseño del encabezado, menú de navegación, etc. */
 }
