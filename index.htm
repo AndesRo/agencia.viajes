@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organización para la Conservación del Medio Ambiente</title>
+    <style>
+        p {
+            font-size: 19px; /* Tamaño de fuente deseado */
+        }
+    </style>
     <link rel="icon" href="img/tree.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
@@ -25,26 +32,33 @@
         </nav>
     </header>
 
-    <h2>Streaming Radio Ecológica</h2>
-    <audio id="audio" src="https://sonic-us.streaming-chile.com:7048/stream?type=http&amp;nocache=141" preload="auto"></audio>
-<button id="audio-button" onclick="toggleAudio()">Play</button>
+    <h2>Escucha Nuestro Podcast</h2>
+    <p>Analizamos cómo el consumo eléctrico contribuye en el cambio climático y cómo es parte de la solución</p>
+    <audio id="podcast-audio" src="audio/audio mp3.mp3" preload="auto"></audio>
+<button id="playpause-button" onclick="toggleAudio()" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border: none; border-radius: 4px; transition: background-color 0.3s ease;"><i id="playpause-icon" class="fa fa-play"></i> Reproducir Podcast</button>
 
 <script>
     function toggleAudio() {
-        var audio = document.getElementById('audio');
-        var audioButton = document.getElementById('audio-button');
+        var audio = document.getElementById('podcast-audio');
+        var button = document.getElementById('playpause-button');
+        var icon = document.getElementById('playpause-icon');
         
         if (audio.paused) {
             audio.play();
-            audioButton.textContent = 'Pause';
+            icon.classList.remove('fa-play');
+            icon.classList.add('fa-pause');
+            button.textContent = 'Pausar Podcast';
+            button.style.backgroundColor = '#d32f2f'; // Cambiar color de fondo al reproducir
         } else {
             audio.pause();
-            audioButton.textContent = 'Play';
+            icon.classList.remove('fa-pause');
+            icon.classList.add('fa-play');
+            button.textContent = 'Reproducir Podcast';
+            button.style.backgroundColor = '#4CAF50'; // Cambiar color de fondo al pausar
         }
     }
 </script>
 
-    
     <section id="quienes-somos">
         <h2>QUIENES SOMOS</h2>
         <p>Una organización dedicada a la conservación del medio ambiente y la sensibilización sobre los efectos del cambio climático<br>Trabajamos para promover un futuro sostenible para las presentes generaciones y futuras<br> Nuestro equipo está formado por profesionales comprometidos con la protección del medio ambiente y voluntarios entusiastas que contribuyen a nuestras iniciativas.</p>
@@ -189,8 +203,15 @@
     </section>
 
     <footer>
-        <p>&copy;Organización para la Conservación del Medio Ambiente. Todos los derechos reservados.<br><i>Creado por Andres Romero/ programación web 1</i>🌍<br></p>
+        <p>&copy;Organización para la Conservación del Medio Ambiente. Todos los derechos reservados.<br><i>Andres Romero | programación web 1</i><br></p>
+        <!-- Iconos de redes sociales -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/TuPagina" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/TuPagina" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/TuPagina" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
+    
 
     <!-- JavaScript para mostrar/ocultar el formulario de registro -->
     <script>
@@ -203,21 +224,6 @@
             }
         });
     </script>
-<script>
-    // Función para reproducir o pausar el audio
-    function toggleAudio() {
-        var audio = document.getElementById('audio');
-        var audioButton = document.getElementById('audio-button');
-        
-        if (audio.paused) {
-            audio.play();
-            audioButton.classList.add('playing'); // Agrega la clase 'playing' al botón cuando se está reproduciendo
-        } else {
-            audio.pause();
-            audioButton.classList.remove('playing'); // Elimina la clase 'playing' del botón cuando se pausa la reproducción
-        }
-    }
-</script>
 
 </body>
 

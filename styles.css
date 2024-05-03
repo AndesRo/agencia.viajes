@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    background-image: url('img/004.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('img/008.jpg'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Cubrir toda la pantalla con la imagen */
     background-position: center; /* Centrar la imagen de fondo */
     background-repeat: no-repeat; /* Evitar que la imagen de fondo se repita */
@@ -11,78 +11,6 @@ body {
     /* Puedes ajustar el valor entre 0 y 1, donde 0 es completamente transparente y 1 es completamente opaco */
     /* Por ejemplo, 0.8 sería un 80% de opacidad */
     background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con opacidad */
-}
-
-
-#audio-button {
-    width: 80px; /* Ancho del botón */
-    height: 80px; /* Altura del botón */
-    border-radius: 50%; /* Hacer el botón redondo */
-    background-color: #004445; /* Color de fondo del botón */
-    color: #fff; /* Color del icono del botón */
-    border: none; /* Eliminar borde */
-    cursor: pointer; /* Cambiar cursor a pointer */
-    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#audio-button:hover {
-    background-color: #87d8c3; /* Color de fondo del botón al pasar el cursor */
-}
-
-#audio-button:focus {
-    outline: none; /* Eliminar el contorno al hacer clic */
-}
-
-#audio-button.playing {
-    background-color: #ff7f50; /* Color de fondo del botón cuando está reproduciendo */
-}
-
-
-
-#audio-button:hover {
-    background-color: #87d8c3; /* Color de fondo del botón al pasar el cursor */
-}
-
-#audio-button:focus {
-    outline: none; /* Eliminar el contorno al hacer clic */
-}
-
-#audio-button.playing {
-    background-color: #ff7f50; /* Color de fondo del botón cuando está reproduciendo */
-}
-#quienes-somos .contenedor-imagenes img {
-    width: 100%; /* Ajustar la imagen al ancho del contenedor */
-    max-width: 1000px; /* Ancho máximo de la imagen */
-    height: auto; /* Altura automática para mantener la proporción */
-    display: block; /* Hacer que la imagen sea un bloque para aplicar estilos */
-    margin: 0 auto; /* Centrar la imagen horizontalmente */
-}
-p {
-    font-size: 18px; /* Tamaño de fuente más grande */
-    line-height: 1.6; /* Espaciado entre líneas */
-    color: black; /* Color de texto más oscuro */
-    margin-bottom: 20px; /* Espaciado inferior entre párrafos */
-}
-
-/* Estilos para el botón de reproducción/pausa */
-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    -webkit-appearance: none; /* Prefijo de vendedor para WebKit */
-    -moz-appearance: none; /* Prefijo de vendedor para Gecko (Firefox) */
-    appearance: none; /* Propiedad estándar */
-}
-
-/* Estilos para el icono SVG */
-svg {
-    fill: #4CAF50;
-    width: 48px;
-    height: 48px;
 }
 
 
