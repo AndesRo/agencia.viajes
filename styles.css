@@ -1,0 +1,313 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 1.1em; /* Aumenta el tamaño del texto en general */
+    background: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    color: #444;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 0.5em 0 0 0;
+}
+
+.logo-container {
+    padding: 30px; /* Aumenta el padding para agrandar el contenedor del logo */
+}
+
+header img {
+    max-width: 350px; /* Aumenta el tamaño del logo */
+    height: auto;
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    flex: 0 0 25%;
+    padding: 10px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    overflow: auto;
+}
+
+.lightbox-img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+nav {
+    text-align: center;
+    background: rgb(52, 72, 52);
+    padding: 0.5em;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+nav a:hover {
+    background: #666;
+    border-radius: 5px;
+}
+
+section {
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+
+.welcome-img {
+    max-width: 80%; /* Ajustar el porcentaje según sea necesario */
+    height: auto;
+    margin: 0 auto 2em auto;
+    display: block;
+}
+
+.about-img {
+    max-width: 30%; /* Ajustar el porcentaje según sea necesario */
+    height: auto;
+    margin: 0 auto 2em auto;
+    display: block;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    flex-wrap: wrap; /* Ajuste para pantallas más pequeñas */
+}
+
+.contact-img {
+    max-width: 20%; /* Ajusta el ancho de la imagen según sea necesario */
+    margin-right: 20px; /* Espacio entre la imagen y los detalles de contacto */
+    border: 2px solid #ccc; /* Agrega un borde de 2px sólido de color gris claro */
+    border-radius: 5px; /* Añade esquinas redondeadas al borde */
+    padding: 5px; /* Agrega un relleno alrededor de la imagen */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave alrededor de la imagen */
+}
+
+.contact-details {
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+.image-caption {
+    margin-top: 5px; /* Espacio entre la imagen y el texto debajo */
+    font-style: italic; /* Estilo de fuente en cursiva para la descripción */
+}
+
+/* Estilos para el texto de contacto */
+.contact-details p {
+    margin: 0; /* Elimina el margen predeterminado de los párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+footer {
+    background: rgb(52, 72, 52);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    bottom: 0;
+    position: static; /* Cambiado de fixed a static */
+    margin-top: 2em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 30px;
+}
+
+#map {
+    height: 200px; /* Altura del mapa */
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.chat-box {
+    min-height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#user-input {
+    width: calc(100% - 70px);
+    padding: 5px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #f1f1f1;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0.5em 0;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    .contact-info {
+        flex-direction: column; /* Ajuste para pantallas más pequeñas */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    .contact-img {
+        max-width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
+        margin-bottom: 20px; /* Espacio entre la imagen y los detalles de contacto en pantallas pequeñas */
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo-footer img {
+        width: 100px; /* Ajusta el ancho del logo según sea necesario */
+        height: auto; /* Mantén la proporción de la imagen */
+        margin-left: auto; /* Mueve el logo hacia la derecha */
+    }
+    
+    footer {
+        padding: 0.5em;
+    }
+}
+.gallery-trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacio uniforme entre las imágenes */
+}
+
+.image-trabajo {
+    flex: 0 0 30%; /* Ancho de cada imagen en la galería */
+    margin-bottom: 20px;
+}
+
+.image-trabajo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave en hover */
+}
+
+.image-trabajo img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño en hover */
+}
