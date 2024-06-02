@@ -26,6 +26,60 @@ header h1 {
     margin: 0.5em 0 0 0;
 }
 
+
+/* Cambios en el color del encabezado */
+header {
+    background: linear-gradient(135deg, #983d39, #209713); /* Cambia el fondo a un degradado de azul a rosa */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Cambios en el color del fondo */
+body {
+    background-color: #f4f4f9; /* Cambia el color de fondo a un tono de gris claro */
+}
+
+/* Cambios en el color del menú de navegación */
+nav {
+    background: #4caf50; /* Cambia el color de fondo a verde */
+}
+
+nav a {
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+
+/* Cambios en el color de las secciones */
+section {
+    background-color: #fff; /* Cambia el color de fondo a blanco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+}
+
+/* Cambios en el color del pie de página */
+footer {
+    background: #4caf50; /* Cambia el color de fondo a verde */
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+
+/* Cambios en el color de los enlaces del pie de página */
+.footer-content a {
+    color: #fff; /* Cambia el color del texto de los enlaces a blanco */
+}
+
+/* Cambios en el color de los botones */
+button {
+    background-color: #00bcd4; /* Cambia el color de fondo a azul */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+button:hover {
+    background-color: #008ba3; /* Cambia el color de fondo en el hover a un tono más oscuro de azul */
+}
+
+/* Cambios en el color de los iconos de redes sociales */
+.social-links img {
+    filter: invert(100%); /* Invierte los colores de los iconos para que sean blancos */
+}
+
+
 .logo-container {
     padding: 30px; /* Aumenta el padding para agrandar el contenedor del logo */
 }
@@ -145,13 +199,22 @@ section img {
 }
 
 .contact-img {
-    max-width: 20%; /* Ajusta el ancho de la imagen según sea necesario */
-    margin-right: 20px; /* Espacio entre la imagen y los detalles de contacto */
-    border: 2px solid #ccc; /* Agrega un borde de 2px sólido de color gris claro */
-    border-radius: 5px; /* Añade esquinas redondeadas al borde */
-    padding: 5px; /* Agrega un relleno alrededor de la imagen */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave alrededor de la imagen */
+    max-width: 20%;
+    margin-right: 20px;
+    border: 2px solid #565350;
+    border-radius: 50%; /* Hace que el borde sea redondeado, creando un marco ovalado */
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+.contact-details p {
+    margin: 0.5em 0; /* Espacio entre los párrafos */
+    font-weight: bold; /* Aplica negrita */
+}
+.bold-text {
+    font-weight: bold;
+}
+
 
 .contact-details {
     flex: 1; /* Ocupa el espacio restante */
@@ -195,59 +258,7 @@ footer {
     height: 30px;
 }
 
-#map {
-    height: 200px; /* Altura del mapa */
-}
 
-.chat-container {
-    max-width: 400px;
-    margin: 50px auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-
-.chat-box {
-    min-height: 200px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    padding: 10px;
-    overflow-y: auto;
-}
-
-#user-input {
-    width: calc(100% - 70px);
-    padding: 5px;
-    margin-right: 5px;
-}
-
-button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el ratón */
-}
-
-.message {
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.user-message {
-    background-color: #f1f1f1;
-    text-align: right;
-}
-
-.bot-message {
-    background-color: #007bff;
-    color: white;
-    text-align: left;
-}
 
 @media (max-width: 768px) {
     nav {
@@ -263,15 +274,25 @@ button:hover {
         padding: 1em;
     }
 
-    .contact-info {
-        flex-direction: column; /* Ajuste para pantallas más pequeñas */
-        align-items: flex-start; /* Alinea los elementos al inicio */
-    }
-
+   
     .contact-img {
         max-width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
         margin-bottom: 20px; /* Espacio entre la imagen y los detalles de contacto en pantallas pequeñas */
     }
+   
+    .contact-info-box {
+        background: white; /* Fondo blanco */
+        border: 2px solid #ccc; /* Borde gris */
+        border-radius: 5px; /* Bordes redondeados */
+        padding: 20px; /* Espaciado interno */
+        max-width: 400px; /* Ancho máximo */
+        margin: 0 auto; /* Centrar horizontalmente */
+    }
+    
+    .contact-details p {
+        margin: 0.5em 0; /* Espaciado entre párrafos */
+    }
+    
 
     .footer-content {
         display: flex;
@@ -310,4 +331,96 @@ button:hover {
 
 .image-trabajo img:hover {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño en hover */
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.slide-in-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.slide-in-left.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.lightbox-content img {
+    margin-bottom: -4px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
