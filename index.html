@@ -4,171 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESGER</title>
+    <meta name="description" content="Empresa de servicios generales ofreciendo mantenimiento residencial, electricidad, obras menores y más.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="imagenes/letra-e.png" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-    <div class="header-background"></div>
-    <div class="logo-container">
-        <img src="imagenes/ESGER 2.png" alt="Logo de ESGER">
-    </div>
-</header>
-
-<nav>
-    <a href="#home" class="nav-link">Inicio</a>
-    <a href="#services" class="nav-link">Servicios</a>
-    <a href="#about" class="nav-link">Nosotros</a>
-    <a href="#contact" class="nav-link">Contacto</a>
-</nav>
-
-<section id="home">
-    <h2 class="slide-in-left">Bienvenidos a ESGER</h2>
-    <p class="slide-in-left">Ofrecemos una amplia gama de servicios para satisfacer todas tus necesidades. Desde mantenimiento residencial hasta soluciones industriales complejas, estamos aquí para ayudarte.</p>
-</section>
-
-<section id="services">
-    <h2>Nuestros Servicios</h2>
-    <ul>
-        <li>Mantenimiento Residencial</li>
-        <li>Electricidad domiciliaria e Industrial</li>
-        <li>Instalación y venta de paneles solares-Termo Solar</li>
-        <li>Cierres Perimetrales-Estructuras metálicas, portones e instalación de motores eléctricos</li>
-        <li>Zanjas para canalización subterránea</li>
-        <li>Obras menores en construcción</li>
-        <li>Lampistería</li>
-    </ul>
-</section>
-
-<section id="about">
-    <h2>Sobre Nosotros</h2>
-    <p class="fade-in">Con más de 8 años de experiencia, somos líderes en la prestación de servicios generales. Nos comprometemos a brindar un servicio de calidad con precios competitivos y atención especializada.</p>
-</section>
-
-<section id="trabajos">
-    <h2>Nuestros Trabajos Realizados</h2>
-    <div class="gallery-trabajos">
-        <div class="image-trabajo">
-            <img src="imagenes/FB_IMG_1717033118789.jpg" alt="Trabajo Realizado 1" onclick="openLightbox();currentSlide(1)">
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/01.png" alt="Logo de la empresa" aria-label="Logo de ESGER">
         </div>
-        <div class="image-trabajo">
-            <img src="imagenes/FB_IMG_1717033130062.jpg" alt="Trabajo Realizado 2" onclick="openLightbox();currentSlide(2)">
-        </div>
-        <div class="image-trabajo">
-            <img src="imagenes/IMG-20240531-WA0979.jpg" alt="Trabajo Realizado 3" onclick="openLightbox();currentSlide(3)">
-        </div>
-        <div class="image-trabajo">
-            <img src="imagenes/IMG-20240531-WA1001.jpg" alt="Trabajo Realizado 4" onclick="openLightbox();currentSlide(4)">
-        </div>
-        <div class="image-trabajo">
-            <img src="imagenes/FB_IMG_1717032765266.jpg" alt="Trabajo Realizado 5" onclick="openLightbox();currentSlide(5)">
-        </div>
-        <div class="image-trabajo">
-            <img src="imagenes/FB_IMG_1717032296885.jpg" alt="Trabajo Realizado 6" onclick="openLightbox();currentSlide(6)">
-        </div>
-    </div>
 
-    <div id="lightbox" class="lightbox">
-        <span class="close" onclick="closeLightbox()">&times;</span>
-        <div class="lightbox-content">
-            <div class="mySlides">
-                <img src="imagenes/FB_IMG_1717033118789.jpg" alt="Trabajo Realizado 1" style="width:100%">
+        <div class="logo-container">
+            <div class="logo-animation"></div>
+         
+        </div>
+        <div class="separador"></div> 
+        <nav>
+            <div class="hamburguesa">
+                <div class="linea"></div>
+                <div class="linea"></div>
+                <div class="linea"></div>
             </div>
-            <div class="mySlides">
-                <img src="imagenes/FB_IMG_1717033130062.jpg" alt="Trabajo Realizado 2" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <img src="imagenes/IMG-20240531-WA0979.jpg" alt="Trabajo Realizado 3" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <img src="imagenes/IMG-20240531-WA1001.jpg" alt="Trabajo Realizado 4" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <img src="imagenes/FB_IMG_1717032765266.jpg" alt="Trabajo Realizado 5" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <img src="imagenes/FB_IMG_1717032296885.jpg" alt="Trabajo Realizado 6" style="width:100%">
-            </div>
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        </div>
-    </div>
-</section>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="contact">
+    <section id="bienvenida" class="bienvenida">
+        <div class="contenido-bienvenida">
+            <h2>Bienvenidos</h2>
+            <p>Ofrecemos una amplia gama de servicios para satisfacer todas tus necesidades. Desde mantenimiento residencial hasta soluciones industriales complejas, estamos aquí para ayudarte.</p>
+           
+        </div>
+    </section>
     
-    <h2>Contacto</h2>
-    <div class="contact-info">
-        <img src="imagenes/FB_IMG_1717031894432.png" alt="Contacto Carlos Romero Millaquen" class="contact-img">
-        <div class="contact-info-box">
-            <div class="contact-details">
-                <p><strong>Carlos Romero Millaquen</strong></p>
-                <p><strong>Dirección:</strong> calle Relun s/n, <br>Villarrica, Chile</p>
-                <p><strong>Teléfono:</strong> <a href="tel:+56989235286">+569 89235286</a></p>
-                <p><strong>Email:</strong> <a href="mailto:esgerspa@gmail.com">esgerspa@gmail.com</a></p>
+    <section id="servicios" class="seccion">
+        <h2 class="text-center">Nuestros Servicios</h2>
+        <div class="servicios-container">
+            
+            <div class="servicio">
+                <h3>Mantenimiento Residencial</h3>
+                <p>Ofrecemos servicios de mantenimiento residencial completo, incluyendo reparaciones menores, pintura, limpieza y jardinería.</p>
+            </div>
+            <div class="servicio">
+                <h3>Electricidad Domiciliaria e Industrial</h3>
+                <p>Realizamos instalaciones y reparaciones eléctricas tanto para hogares como para negocios. Desde cableado hasta instalación de sistemas de iluminación.</p>
+            </div>
+            <div class="servicio">
+                <h3>Zanjas para canalización subterránea</h3>
+                <p>Realizamos excavaciones y zanjas para la instalación de sistemas de canalización subterránea, como cables eléctricos, tuberías de agua y drenaje.</p>
+            </div>
+            <div class="servicio">
+                <h3>Obras menores en construcción</h3>
+                <p>Realizamos obras menores de construcción, desde pequeñas reparaciones hasta proyectos de renovación y remodelación.</p>
+            </div>
+            <div class="servicio">
+                <h3>Lampistería</h3>
+                <p>Ofrecemos servicios completos de lampistería para hogares, comercios e industrias. Nos especializamos en la instalación, reparación y mantenimiento de sistemas de iluminación y elementos eléctricos.</p>
             </div>
         </div>
-        
-        
-        
-        
-        <div class="logo-footer">
-            <img src="imagenes/images.png" alt="Logo de ESGER">
+    </section>
+    
+    <hr class="separador">
+    <section id="proyectos">
+        <h2 class="text-center">Nuestros Proyectos</h2>
+        <div id="galeria">
+            <img src="imagenes/IMG-20240531-WA0979.jpg" alt="Proyecto 1">
+            <img src="imagenes/IMG-20240531-WA1001.jpg" alt="Proyecto 2">
+            <img src="imagenes/FB_IMG_1717033130062.jpg" alt="Proyecto 3">
+            <img src="imagenes/FB_IMG_1717033118789.jpg" alt="Proyecto 4">
+            <img src="imagenes/FB_IMG_1717032765266.jpg" alt="Proyecto 5">
+            <img src="imagenes/FB_IMG_1717032296885.jpg" alt="Proyecto 6">
+            <img src="imagenes/FB_IMG_1717032709427.jpg" alt="Proyecto 7">
+            <!-- Agrega más imágenes según sea necesario -->
         </div>
-    </div>
-</section>
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="Imagen ampliada">
+        </div>
+    </section>
+    <hr class="separador">
+    <section id="contacto" class="seccion">
+        <div class="formulario-container">
+            <h2 class="text-center">Contacto</h2>
+            <form id="formulario-contacto" class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Empresa Esger - Todos los derechos reservados</p>
 
-<footer>
-    <p>&copy; 2024 ESGER. Todos los derechos reservados.</p>
-    <div class="social-links">
-        <a href="https://www.facebook.com/tu_pagina_de_facebook" target="_blank" rel="noopener noreferrer">
-            <img src="imagenes/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank" rel="noopener noreferrer">
-            <img src="imagenes/instagram.png" alt="Instagram">
-        </a>
-        <a href="https://wa.me/+56989235286" target="_blank" rel="noopener noreferrer">
-            <img src="imagenes/whatsapp.png" alt="WhatsApp">
-        </a>
-    </div>
-</footer>
+        <div class="redes-sociales">
+            <a href="imagenes/facebook.png" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="imagenes/instagram.png" class="social"><i class="fab fa-twitter"></i></a>
+            <a href="imagenes/whatsapp.png" class="social"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+    </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-<script src="script.js"></script>
-<script>
-    let slideIndex = 1;
-
-    function openLightbox() {
-        document.getElementById('lightbox').style.display = 'block';
-        showSlides(slideIndex);
-    }
-
-    function closeLightbox() {
-        document.getElementById('lightbox').style.display = 'none';
-    }
-
-    function changeSlide(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName('mySlides');
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = 'none';
-        }
-        slides[slideIndex - 1].style.display = 'block';
-    }
-</script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
