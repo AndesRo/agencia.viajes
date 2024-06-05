@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESGER</title>
+    <meta name="description" content="Empresa de servicios generales ofreciendo mantenimiento residencial, electricidad, obras menores y más.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+<body>
+
+    <header role="banner">
+        <div class="logo-container">
+            <img src="imagenes/01.png" alt="Logo de la empresa" aria-label="Logo de ESGER">
+        </div>
+        
+          <nav role="navigation">
+            <div class="hamburguesa" aria-label="Menú de navegación">
+                <div class="linea"></div>
+                <div class="linea"></div>
+                <div class="linea"></div>
+            </div>
+           
+
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="contenedor-audio">
+        <audio id="miAudio" autoplay loop>
+            <source src="electronica.mp3" type="audio/mpg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <button id="boton-audio">
+            <i id="icono-audio" class="fas fa-volume-up"></i>
+        </button>
+    </div>
+    
+      
+
+    <main>
+        <section id="bienvenida" class="bienvenida">
+            <div class="contenido-bienvenida">
+                <h2>Bienvenidos</h2>
+                <p>Ofrecemos una amplia gama de servicios, desde mantenimiento residencial hasta soluciones industriales complejas. Estamos aquí para ayudarte.</p>
+                <a href="#servicios" class="btn-cta">Conoce nuestros servicios</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="seccion">
+            <h2 class="text-center"></h2>
+            <div class="servicios-container">
+                <div class="servicio">
+                    <h3>Mantenimiento Residencial</h3>
+                    <p>Ofrecemos servicios de mantenimiento residencial completo, incluyendo reparaciones menores, pintura, limpieza y jardinería.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Electricidad Domiciliaria e Industrial</h3>
+                    <p>Realizamos instalaciones y reparaciones eléctricas tanto para hogares como para negocios. Desde cableado hasta instalación de sistemas de iluminación.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Zanjas para canalización subterránea</h3>
+                    <p>Realizamos excavaciones y zanjas para la instalación de sistemas de canalización subterránea, como cables eléctricos, tuberías de agua y drenaje.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Obras menores en construcción</h3>
+                    <p>Realizamos obras menores de construcción, desde pequeñas reparaciones hasta proyectos de renovación y remodelación.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Lampistería</h3>
+                    <p>Ofrecemos servicios completos de lampistería para hogares, comercios e industrias. Nos especializamos en la instalación, reparación y mantenimiento de sistemas de iluminación y elementos eléctricos.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="separador">
+
+        <section id="proyectos">
+            <h2 class="text-center">Nuestros Proyectos</h2>
+            <div id="galeria" class="galeria">
+                <img src="imagenes/IMG-20240531-WA0979.jpg" alt="Proyecto 1">
+                <img src="imagenes/IMG-20240531-WA1001.jpg" alt="Proyecto 2">
+                <img src="imagenes/FB_IMG_1717033130062.jpg" alt="Proyecto 3">
+                <img src="imagenes/FB_IMG_1717033118789.jpg" alt="Proyecto 4">
+                <img src="imagenes/FB_IMG_1717032765266.jpg" alt="Proyecto 5">
+                <img src="imagenes/FB_IMG_1717032296885.jpg" alt="Proyecto 6">
+                <img src="imagenes/FB_IMG_1717032709427.jpg" alt="Proyecto 7">
+                <img src="imagenes/FB_IMG_1717032341457.jpg" alt="Proyecto 8">
+            </div>
+            <div id="modal" class="modal">
+                <span class="cerrar">&times;</span>
+                <img class="modal-content" id="img01" alt="Imagen ampliada">
+            </div>
+        </section>
+
+
+        <hr class="separador">
+
+        <section id="contacto" class="seccion">
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    
+                    <div class="tecnico-img">
+                        <img src="imagenes/FB_IMG_1717031894432.png" alt="Técnico Eléctrico">
+                    </div>
+                    <div class="tecnico-texto">
+                        <p>Carlos Moises Romero Millaquen</p>
+                        
+                    </div>
+                </div>
+                <div class="logo-container">
+                    <img src="imagenes/images.png" alt="Logo de la empresa">
+                </div>
+                <p>Teléfono -<a href="tel:+56989235286">+569 8923 5286</a></p>
+                <p>Email -<a href="mailto:Esgerspa@gmail.com">Esgerspa@gmail.com</a></p>
+            </div>
+        </section>
+
+        <div class="redes-sociales">
+            <h2>Síguenos en nuestras redes sociales</h2>
+            <div class="redes-container">
+                <a href="https://facebook.com/tu_pagina" target="_blank" class="red-social"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+                <a href="https://twitter.com/tu_cuenta" target="_blank" class="red-social"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                <a href="https://wa.me/56989235286" target="_blank" class="red-social"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+                <a href="https://instagram.com/tu_cuenta" target="_blank" class="red-social"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Empresa Esger - Todos los derechos reservados - Creado por AndrewRo</p>
+        <p id="fechaHora"></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
