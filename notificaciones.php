@@ -1,18 +1,11 @@
 <?php
-$conexion = new mysqli('localhost:3306', 'root', '', 'agencia de viajes');
+// Generar notificación de oferta especial
+$notificaciones = [
+    ["mensaje" => "¡Oferta especial! 20% de descuento en vuelos a Europa por tiempo limitado."],
+    ["mensaje" => "¡Oferta especial! Descuento del 15% en todos los hoteles de 4 estrellas."],
+    ["mensaje" => "¡Reserva ahora y obtén una noche gratis en tu hotel en América Latina!"]
+];
 
-if ($conexion->connect_error) {
-    die("Conexión fallida: " . $conexion->connect_error);
-}
-
-$resultado = $conexion->query("SELECT * FROM paquetes WHERE oferta=1");
-
-$notificaciones = [];
-
-while ($fila = $resultado->fetch_assoc()) {
-    $notificaciones[] = ['mensaje' => '¡Oferta Especial en ' . $fila['nombre_paquete'] . '! Solo $' . $fila['precio']];
-}
-
+header('Content-Type: application/json');
 echo json_encode($notificaciones);
 
-$conexion->close();

@@ -1,79 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia de Viajes</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Agencia de Viajes</h1>
+        <h1>Bienvenido a la Agencia de Viajes</h1>
 
+        <!-- Formulario de búsqueda de vuelos -->
         <div class="form-container">
             <form id="buscar-vuelos">
-                <h2>Buscar lista de Vuelos</h2>
+                <h2>Buscar Vuelos</h2>
                 <label for="salida">Salida:</label>
-                <select id="salida" name="salida">
-                    <option value="Santiago">Santiago</option>
-                    <option value="Buenos Aires">Buenos Aires</option>
-                    <option value="Miami">Miami</option>
-                    <option value="Madrid">Madrid</option>
-                    <option value="Nueva York">Nueva York</option>
-                    <option value="Cancún">Cancún</option>
-                </select>
+                <input type="text" id="salida" name="salida" required>
                 <label for="destino">Destino:</label>
-                <select id="destino" name="destino">
-                    <option value="Buenos Aires">Buenos Aires</option>
-                    <option value="Miami">Miami</option>
-                    <option value="Madrid">Madrid</option>
-                    <option value="Nueva York">Nueva York</option>
-                    <option value="Cancún">Cancún</option>
-                    <option value="Santiago">Santiago</option>
-                </select>
+                <input type="text" id="destino" name="destino" required>
                 <label for="fecha-salida">Fecha de Salida:</label>
-                <input type="date" id="fecha-salida" name="fecha-salida">
+                <input type="date" id="fecha-salida" name="fecha-salida" required>
                 <label for="fecha-regreso">Fecha de Regreso:</label>
-                <input type="date" id="fecha-regreso" name="fecha-regreso">
+                <input type="date" id="fecha-regreso" name="fecha-regreso" required>
                 <button type="submit">Buscar</button>
             </form>
-            
-
-            <form id="buscar-hoteles">
-                <h2>Buscar lista de Hoteles</h2>
-                <label for="ubicacion">Ubicación:</label>
-                <select id="ubicacion" name="ubicacion">
-                    <option value="Santiago Centro">Santiago Centro</option>
-                    <option value="Las Condes, Santiago">Las Condes, Santiago</option>
-                    <option value="Viña del Mar">Viña del Mar</option>
-                    <option value="Cancún, Quintana Roo">Cancún, Quintana Roo</option>
-                    <option value="Barcelona, España">Barcelona, España</option>
-                    <option value="Orlando, Florida">Orlando, Florida</option>
-                </select>
-                <label for="fecha-checkin">Fecha de Check-in:</label>
-                <input type="date" id="fecha-checkin" name="fecha-checkin">
-                <label for="fecha-checkout">Fecha de Check-out:</label>
-                <input type="date" id="fecha-checkout" name="fecha-checkout">
-                <button type="submit">Buscar</button>
-            </form>
-            
         </div>
 
+        <!-- Formulario de búsqueda de hoteles -->
+        <div class="form-container">
+            <form id="buscar-hoteles">
+                <h2>Buscar Hoteles</h2>
+                <label for="ubicacion">Ubicación:</label>
+                <input type="text" id="ubicacion" name="ubicacion" required>
+                <label for="fecha-checkin">Fecha de Check-in:</label>
+                <input type="date" id="fecha-checkin" name="fecha-checkin" required>
+                <label for="fecha-checkout">Fecha de Check-out:</label>
+                <input type="date" id="fecha-checkout" name="fecha-checkout" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <!-- Contenedor de notificaciones -->
         <div id="notificaciones">
             <h2>Notificaciones</h2>
-            <ul id="lista-notificaciones">
-                <!-- Las notificaciones se agregarán dinámicamente aquí -->
-            </ul>
+            <ul id="lista-notificaciones"></ul>
         </div>
 
-        <div id="resultados">
-            <!-- Los resultados de vuelos y hoteles se mostrarán aquí -->
-        </div>
+        <!-- Contenedor de notificaciones emergentes -->
+        <div id="notificaciones-emergentes"></div>
+
+        <div id="resultados"></div>
     </div>
-    <footer>
-        <p>Desarrollado Andrewro</p>
-    </footer>
-</div>
-    <script src="scripts.js" defer></script>
+    <script src="JS/scripts.js"></script>
 </body>
 </html>
